@@ -1,0 +1,13 @@
+
+    <label class="container">Si
+      <input id="nueva" #n (click)="model.type = n.value" name="radio" value="nueva" type="radio">
+      <span class="1"></span>
+    </label>
+<label class="container">No
+      <input id="clasica" #c (click)="model.type = c.value" name="radio" value="clasica" type="radio">
+      <span class="2"></span>
+    </label>
+
+
+    <button type="button" class="btn btn-primary"  (click)="typeCard(model.type)">Continuar</button>
+    <app-modal  #childModal></app-modal>
